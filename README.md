@@ -1,0 +1,1 @@
+A "/" at the start directs to the directory where "index.html" exists.

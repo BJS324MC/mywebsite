@@ -68,27 +68,27 @@ a {
     text-decoration: none;
 }
 
-header{
+.header-home{
     background-image:url("assets/background1.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-}
-
-.seperator {
-    color:#ffffff;
-    text-align: center;
-    font-size: 25pt;
-    padding:10% 0;
-}
-
-.seperator *{
-    animation: startup 0.7s;
 }
 
 .s1{
     background-image:url("assets/background.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+
+.separator {
+    color:#ffffff;
+    text-align: center;
+    font-size: 25pt;
+    padding:10% 0;
+}
+
+.separator *{
+    animation: startup 0.7s;
 }
 
 .menu,

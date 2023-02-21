@@ -4,11 +4,12 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Login ✦ Fern</title>
-    <link rel="icon" type="image/x-icon" href="assets/logo/logoicon.png">
+    <title>About ✦ Fern</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo/logoicon.png">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='newblog.css'>
 </head>
 
 <body>
@@ -28,13 +29,13 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
     </script>
-    <header class="header-home">
+    <header>
         <nav>
             <ul class="menu">
-                <li class="logo"><a href="index.html"><img src="assets/logo/logo.svg" class="logo-image"></a></li>
-                <li class="item"><a href="pages/about/about.html">About</a></li>
-                <li class="item"><a href="pages/newblog/newblog.html">New Blog</a></li>
-                <li class="item"><a href="pages/blogs/blogs.html">Blogs</a></li>
+                <li class="logo"><a href="/index.html"><img src="/assets/logo/logo.svg" class="logo-image"></a></li>
+                <li class="item post" id="postButton"><a href="#">Post</a></li>
+                <li class="item"><a href="/index.html">Home</a></li>
+                <li class="item"><a href="/pages/blogs/blogs.html">Blogs</a></li>
                 <li class="item has-submenu">
                     <a tabindex="0">Find Me</a>
                     <ul class="submenu">
@@ -56,17 +57,12 @@
                 <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
             </ul>
         </nav>
-        <div class="separator">
-            <h1>It's time for a new beginning.</h1>
-            <p>And your hands shall bring new wonders.</p>
-        </div>
     </header>
-    <section class="s1 separator">
-        <h1>Create your own blog without hassle.</h1>
-        <p>Rapidly spread what you want to say.</p>
-    </section>
-    <!--<section style="color:white;">What is this? <br><br> A project of mine.<br><br>Why are you streaming? <br><br> I just like to stream random stuff.</section>-->
-    <script src='main.js'></script>
+    <div class="content" id="draft">
+        <p class="para heading" contenteditable=true>Title</p>
+        <p class="para" contenteditable=true>Tell a story...</p>
+    </div>
+    <script src='/main.js'></script>
 </body>
 
 </html>

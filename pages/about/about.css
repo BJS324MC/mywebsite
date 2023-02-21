@@ -1,0 +1,50 @@
+a {
+    color: #404040;
+    text-decoration: none;
+}
+
+.button a {
+    background: #33bb33;
+    border: 1px #33bb33 solid;
+    color:white
+}
+.button:not(.secondary) a:hover {
+    background: #22aa22;
+    border-color: #229922;
+}
+
+.has-submenu>a::after {
+    color: black;
+}
+
+nav {
+    padding: 0 20px;
+    background-color: rgba(22, 22, 22, 0.2);
+    font-size: 18px;
+}
+
+.item{
+    padding:11px;
+}
+
+.heading {
+    color:#000000;
+    font-size: 20pt;
+    text-align: center;
+    padding:9% 5%;
+    background-image:url("/assets/about.jpg");
+    background-position: 10% 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.sub-heading {
+    color:#717171;
+    font-family: Oswald;
+    font-size: 20pt;
+    padding:3% 0%;
+}
+.body {
+    color:#000000;
+    font-size: 17pt;
+    padding:5% 5%;
+}
